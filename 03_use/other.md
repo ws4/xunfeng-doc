@@ -15,7 +15,7 @@
 
  ```py
  # coding:utf-8
- # author:wolf@YSRC
+ # author:gv·残亦
 import thread
 from lib.common import *
 from lib.start import *
